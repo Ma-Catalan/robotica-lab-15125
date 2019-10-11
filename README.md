@@ -7,4 +7,4 @@ Desarrollo de actividades para la asignatura de Tópico de Especialidad: Robóti
 
 3. Pulsador: programa para encender y apagar el LED al presionar el pulsador.
 
-4. Sensor Ultrasónico: Para crear una alarma indicadora de distancia con el sensor.
+4. Sensor Ultrasónico: programa para crear una alarma indicadora de distancia con el sensor.
