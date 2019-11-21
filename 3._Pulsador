@@ -1,28 +1,23 @@
-Creado: Luis del Valle (ldelvalleh@programarfacil.com)
-  https://programarfacil.com
-*/
- 
 // Constantes para definir los pines
-const int pulsadorPin = 2;
-const int ledPin = 13;
- 
+
+const int pulsador = 2;
+const int led = 5;
 int valorPulsador = 0;
- 
-void setup() {
-    // Activamos los pines de entrada y salida
-    pinMode(pulsadorPin, INPUT);
-    pinMode(ledPin, OUTPUT);
+
+void setup(){
+  pinMode(pulsador, INPUT);
+  pinMode(led, OUTPUT);
 }
- 
-void loop() {
-    // Leemos el valor del pin
-    valorPulsador = digitalRead(pulsadorPin);
- 
-  // Encendemos o apagamos el pin del LED según convenga
+
+void loop(){
+   // Leemos el valor del pin
+  valorPulsador = digitalRead(pulsador);
+  
+   // Encendemos o apagamos el pin del LED según convenga
   if (valorPulsador == HIGH) {
-      digitalWrite(ledPin, HIGH);
+      digitalWrite(led, HIGH);
   }
   else {
-      digitalWrite(ledPin, LOW);
-  }
+      digitalWrite(led, LOW);
+      }
 }
